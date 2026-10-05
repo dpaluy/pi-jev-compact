@@ -1,5 +1,7 @@
 # Jev Compact for Pi
 
+> **Recommendation: Do not use this extension with Pi 1.0.2 or later.** Use Pi's built-in [codemode](https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/codemode.md) to filter tool output before it enters model context, and native compaction to manage long sessions. Codemode does not replace history pruning, but this extension has not demonstrated an additional benefit in task quality or total cost. If installed, run `/jev-prune off` to disable pruning.
+
 ## What it does
 
 Jev Compact reduces the context sent to your Pi model. It uses [TypeSafe Jev](https://typesafe.ai/) to identify tool calls and results that are no longer needed, then removes those pairs from outgoing requests.
